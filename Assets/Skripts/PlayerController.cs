@@ -47,9 +47,14 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
+        //Движение
         _characterController.Move(_moveVector * speed * Time.fixedDeltaTime);
+
+        //Падение и прыжок
         _fallVelocity += gravity * Time.fixedDeltaTime;
         _characterController.Move(Vector3.down * _fallVelocity * Time.fixedDeltaTime);
+
+        //Скорость падения
         if (_characterController.isGrounded)
         {
             _fallVelocity = 0;
