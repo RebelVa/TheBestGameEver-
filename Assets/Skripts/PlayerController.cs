@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public float gravity = 9.8f;
     public float jumpForce;
     public float speed;
+    public Animator animator;
     private float _fallVelocity = 0;
     private CharacterController _characterController;
     private Vector3 _moveVector;
@@ -21,23 +22,30 @@ public class PlayerController : MonoBehaviour
     {
         //Перемещение
         _moveVector = Vector3.zero;
+        var run = 0;
 
         if (Input.GetKey(KeyCode.W))
         {
             _moveVector += transform.forward;
+            run = 1;
         }
         if (Input.GetKey(KeyCode.S))
         {
             _moveVector -= transform.forward;
+            run = 2;
         }
         if (Input.GetKey(KeyCode.D))
         {
             _moveVector += transform.right;
+            run = 3;
         }
         if (Input.GetKey(KeyCode.A))
         {
             _moveVector -= transform.right;
+            run = 4;
         }
+
+        animator.SetInteger("Run 1", run);
 
         //Прыжок
         if (Input.GetKeyDown(KeyCode.Space) && _characterController.isGrounded)

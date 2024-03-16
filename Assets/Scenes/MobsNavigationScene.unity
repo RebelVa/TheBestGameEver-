@@ -1042,7 +1042,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 3.34
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -1379,6 +1379,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 741f73214c8e59045b42ebac4be91444, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 07f90bb6212905248b821613a1e3ed65, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 741f73214c8e59045b42ebac4be91444, type: 3}
 --- !u!4 &1513747985 stripped
@@ -1872,6 +1876,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8602069735512769020, guid: 40887d9612b50c14eb162e517529f161,
+        type: 3}
+      propertyPath: m_Height
+      value: 1.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8602069735512769020, guid: 40887d9612b50c14eb162e517529f161,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8602069735512769020, guid: 40887d9612b50c14eb162e517529f161,
+        type: 3}
+      propertyPath: m_SkinWidth
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 8602069735512769022, guid: 40887d9612b50c14eb162e517529f161,
         type: 3}
