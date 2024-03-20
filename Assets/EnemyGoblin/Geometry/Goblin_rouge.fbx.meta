@@ -1874,7 +1874,7 @@ ModelImporter:
       name: pow_attack
       takeName: Goblin_armature|ArmatureAction
       internalID: 0
-      firstFrame: 179
+      firstFrame: 171
       lastFrame: 207
       wrapMode: 0
       orientationOffsetY: 0
@@ -1894,7 +1894,14 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.6892857
+        functionName: Ata
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1
