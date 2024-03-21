@@ -581,7 +581,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1918619062150253529
 Transform:
   m_ObjectHideFlags: 0
@@ -726,7 +726,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9167566675787057080}
-  - component: {fileID: 4885653343356220981}
+  - component: {fileID: 997647729003432676}
   m_Layer: 0
   m_Name: Fireball Source
   m_TagString: Untagged
@@ -748,7 +748,7 @@ Transform:
   m_Father: {fileID: 8602069735512769022}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4885653343356220981
+--- !u!114 &997647729003432676
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -757,12 +757,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6554599095266379568}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b85d18f783120b94aabd3b1c65f204b6, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f2bbdecdf4026d43936a862798b564b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   targetPoint: {fileID: 1918619062150253529}
   cameraLink: {fileID: 8602069735981338809}
-  targetInSkyDistance: 50
 --- !u!1 &7523115913143222707
 GameObject:
   m_ObjectHideFlags: 0
@@ -939,9 +938,9 @@ GameObject:
   - component: {fileID: 8602069735512769023}
   - component: {fileID: 8602069735512769021}
   - component: {fileID: 8602069735512769020}
-  - component: {fileID: 9200911838865022453}
   - component: {fileID: 8034906763976386472}
   - component: {fileID: 4271123807785198676}
+  - component: {fileID: 1912041347927271833}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1018,21 +1017,6 @@ CharacterController:
   m_SkinWidth: 0.01
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.97, z: 0}
---- !u!114 &9200911838865022453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8602069735512769017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec1dc2a196afab34eba2d120e23d61c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fireballPrefab: {fileID: 553148727910964197, guid: 37878d7171c2ac44a9b1949fd531c2db,
-    type: 3}
-  fireballSourceTransform: {fileID: 9167566675787057080}
 --- !u!114 &8034906763976386472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1057,13 +1041,28 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8602069735512769017}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71967550c40a2dd4d90fab3443a703d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   grenadePrefab: {fileID: -4745170435733978876, guid: 5e287f359423fc5478a3ed90107f5603,
     type: 3}
+--- !u!114 &1912041347927271833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8602069735512769017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f43810eb7043a6c4591d46f5f0c014ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireballPrefab: {fileID: 1144179749410704977, guid: 37878d7171c2ac44a9b1949fd531c2db,
+    type: 3}
+  fireballSourceTransform: {fileID: 9167566675787057080}
 --- !u!1 &8602069735981338811
 GameObject:
   m_ObjectHideFlags: 0

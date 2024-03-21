@@ -1057,6 +1057,7 @@ MonoBehaviour:
   player: {fileID: 1057213578}
   viewAngle: 90
   damage: 10
+  attack: 1
   animator: {fileID: 368759838}
 --- !u!195 &1316866637
 NavMeshAgent:
@@ -1889,6 +1890,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 997647729003432676, guid: 40887d9612b50c14eb162e517529f161,
+        type: 3}
+      propertyPath: targetInSkyDistance
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4271123807785198676, guid: 40887d9612b50c14eb162e517529f161,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403045875369339918, guid: 40887d9612b50c14eb162e517529f161,
+        type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5329317476583512472, guid: 40887d9612b50c14eb162e517529f161,
         type: 3}
       propertyPath: m_IsActive
@@ -1896,7 +1912,82 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5970442338852748870, guid: 40887d9612b50c14eb162e517529f161,
         type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5970442338852748870, guid: 40887d9612b50c14eb162e517529f161,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5970442338852748870, guid: 40887d9612b50c14eb162e517529f161,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5970442338852748870, guid: 40887d9612b50c14eb162e517529f161,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5970442338852748870, guid: 40887d9612b50c14eb162e517529f161,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5970442338852748870, guid: 40887d9612b50c14eb162e517529f161,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5970442338852748870, guid: 40887d9612b50c14eb162e517529f161,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5970442338852748870, guid: 40887d9612b50c14eb162e517529f161,
+        type: 3}
       propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5970442338852748870, guid: 40887d9612b50c14eb162e517529f161,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5970442338852748870, guid: 40887d9612b50c14eb162e517529f161,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5970442338852748870, guid: 40887d9612b50c14eb162e517529f161,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5970442338852748870, guid: 40887d9612b50c14eb162e517529f161,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5970442338852748870, guid: 40887d9612b50c14eb162e517529f161,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7407840650368124880, guid: 40887d9612b50c14eb162e517529f161,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7407840650368124880, guid: 40887d9612b50c14eb162e517529f161,
+        type: 3}
+      propertyPath: m_PixelPerfect
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7407840650368124880, guid: 40887d9612b50c14eb162e517529f161,
+        type: 3}
+      propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8602069735512769017, guid: 40887d9612b50c14eb162e517529f161,
@@ -1984,7 +2075,9 @@ PrefabInstance:
       propertyPath: minAngle
       value: -30
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 40887d9612b50c14eb162e517529f161, type: 3}
 --- !u!1 &2002234200
 GameObject:

@@ -22,11 +22,11 @@ public class FireballSource : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {
-            targetPoint.position = hit.point;
+           targetPoint.position = hit.point;
         }
         else
         {
-            targetPoint.position = ray.GetPoint(targetInSkyDistance);
+           targetPoint.position = ray.GetPoint(targetInSkyDistance);
         }
 
         transform.LookAt(targetPoint.position);
